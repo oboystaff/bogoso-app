@@ -1,6 +1,5 @@
 import AdminLayout from "./components/layout/Layout.vue";
 
-const Welcome = () => import('./components/Welcome.vue');
 const Dashboard = () => import('./components/dashboard/Dashboard.vue');
 const CategoryList = () => import('./components/category/List.vue');
 const CategoryCreate = () => import('./components/category/Add.vue');
@@ -19,11 +18,6 @@ export const routes = [
         path: '/home',
         component: AdminLayout,
         children: [
-            {
-                name: 'home',
-                path: '/home',
-                component: Welcome
-            },
             {
                 name: 'dashboard',
                 path: '/dashboard',

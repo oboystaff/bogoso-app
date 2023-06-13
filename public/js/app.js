@@ -1995,10 +1995,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout_Layout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/layout/Layout.vue */ "./resources/js/components/layout/Layout.vue");
 
 
-var Welcome = function Welcome() {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_Welcome_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Welcome.vue */ "./resources/js/components/Welcome.vue"));
-};
-
 var Dashboard = function Dashboard() {
   return __webpack_require__.e(/*! import() */ "resources_js_components_dashboard_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/dashboard/Dashboard.vue */ "./resources/js/components/dashboard/Dashboard.vue"));
 };
@@ -2048,10 +2044,6 @@ var routes = [{
   path: '/home',
   component: _components_layout_Layout_vue__WEBPACK_IMPORTED_MODULE_0__.default,
   children: [{
-    name: 'home',
-    path: '/home',
-    component: Welcome
-  }, {
     name: 'dashboard',
     path: '/dashboard',
     component: Dashboard
@@ -35005,10 +34997,8 @@ Vue.compile = compileToFunctions;
 /******/ 	(() => {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
-/******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_Welcome_vue":1,"resources_js_components_dashboard_Dashboard_vue":1,"resources_js_components_category_List_vue":1,"resources_js_components_category_Add_vue":1,"resources_js_components_category_Edit_vue":1,"resources_js_components_application_List_vue":1,"resources_js_components_application_Add_vue":1,"resources_js_components_application_Edit_vue":1,"resources_js_components_user-management_Login_vue":1,"resources_js_components_user-management_Add_vue":1,"resources_js_components_user-management_Edit_vue":1,"resources_js_components_user-management_List_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
-/******/ 			return undefined;
+/******/ 			return "js/main/" + chunkId + ".js?id=" + {"resources_js_components_dashboard_Dashboard_vue":"ddfd54fbd76cd6094b49","resources_js_components_category_List_vue":"62a21b33f09946113221","resources_js_components_category_Add_vue":"960a977eb0c97d50da25","resources_js_components_category_Edit_vue":"163b36086b87787fa9e5","resources_js_components_application_List_vue":"fdc9d8639bbe6947bc9e","resources_js_components_application_Add_vue":"2cb7c53926e1aadf6846","resources_js_components_application_Edit_vue":"33106772d4b90b0d0feb","resources_js_components_user-management_Login_vue":"cfb776cfc5f24d9c75da","resources_js_components_user-management_Add_vue":"ba82278afcd03484cd42","resources_js_components_user-management_Edit_vue":"5c73dd782cf48a71c1af","resources_js_components_user-management_List_vue":"0ec87136e5bf5963b4ad"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
